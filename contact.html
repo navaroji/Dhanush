@@ -183,7 +183,7 @@
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" onclick="sendEmail()" id="sendMessageButton">Send Message</button>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -267,29 +267,12 @@
         
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
-       
+        <script src="mail/contact.js"></script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-		<script src="https://smtpjs.com/v3/smtp.js">
-  </script>
     </body>
 </html>
-<script type="text/javascript">
-    function sendEmail() {
-	    alert("fired");
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "navarojimano@gmail.com",
-        Password: "mano4jesus4*",
-        To: 'navarojimano@gmail.com',
-        From: "navarojimano@gmail.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
-  </script>
+
+
 
